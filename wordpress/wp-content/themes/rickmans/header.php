@@ -15,6 +15,40 @@ $lists = get_field('mobile_menu', 'option');
 $baner_mob = get_field('baner_mob', 'option');
 
 ?>
+<header class="header-mob">
+    <div class="section section-header">
+        <div class="wrapper wrapper-header">
+            <div class="wrap-header_mob">
+                <div class="header_mob-main">
+                    <?php the_custom_logo();?>
+                    <div class="button_open">
+                        <img src="<?= $lists['open_men'] ? $lists['open_men'] : ''; ?>">
+                    </div>
+                    <div class="button_close">
+                    <img src="<?= $lists['close_menu'] ? $lists['close_menu'] : ''; ?>">
+                    </div>
+                </div>
+                <div class="header_mob__ul">
+                        <?php
+                            wp_nav_menu([
+                            'theme_location' => 'menu-mob',
+                            'container' => 'div',
+                            'container_class' => 'ul_links',
+                            'menu_class' => 'ul_links',
+                        ]);?>
+                    <div class="lang">
+                    <?php
+                  if (is_active_sidebar('rickmans-lang-mob')) {
+        dynamic_sidebar('rickmans-lang-mob');
+      }
+      ?>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <header class="header-pk">
     <div class="section section-header">
         <div class="wrapper wrapper-header">
@@ -48,41 +82,15 @@ $baner_mob = get_field('baner_mob', 'option');
                 'menu_class' => 'menu-main',
                 ]);?>
                 </nav>
+                <?php
+                    if (is_active_sidebar('rickmans-lang')) {
+                    dynamic_sidebar('rickmans-lang');
+                    }
+                    ?>
             </div>
         </div>
     </div>
 </header>
-<header class="header-mob">
-    <div class="section section-header">
-        <div class="wrapper wrapper-header">
-            <div class="wrap-header_mob">
-                <div class="header_mob-main">
-                    <?php the_custom_logo();?>
-                    <div class="button_open">
-                        <img src="<?= $lists['open_men'] ? $lists['open_men'] : ''; ?>">
-                    </div>
-                    <div class="button_close">
-                    <img src="<?= $lists['close_menu'] ? $lists['close_menu'] : ''; ?>">
-                    </div>
-                </div>
-                <div class="header_mob__ul">
-                        <?php
-                            wp_nav_menu([
-                            'theme_location' => 'menu-mob',
-                            'container' => 'div',
-                            'container_class' => 'ul_links',
-                            'menu_class' => 'ul_links',
-                        ]);?>
-                    <div class="lang">
-                        <div><span>Рус</span><span>Eng</span></div>
-                        <span class="open_lang">
-                            <img src="<?= $lists['icon_lang'] ? $lists['icon_lang'] : ''; ?>">
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 
 

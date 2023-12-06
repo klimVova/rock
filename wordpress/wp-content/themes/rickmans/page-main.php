@@ -4,7 +4,7 @@ get_header();
 
 $services = get_field('service_section');
 $advantage = get_field('advantage_section');
-$items = get_field('header' , 'option');
+$items = get_field('header');
 $baner_mob = get_field('baner_mob', 'option');
 ?>
 <div class="slider">
@@ -20,19 +20,19 @@ $baner_mob = get_field('baner_mob', 'option');
         <p>
         <?= $items['subtitle'] ? $items['subtitle'] : '';?>
         </p>
-        <button><a href="<?= $items['link'] ? $items['link'] : '';?>">Услуги</a></button>
+        <button><a href="<?= $items['link'] ? $items['link'] : '';?>"><?= $items['link_name'] ? $items['link_name'] : '';?></a></button>
     </div>
 </div>
 
 <div class="slider_mob" style="background-image: url('<?= $baner_mob['image'] ? $baner_mob['image'] : ''; ?>')">
     <div class="slider-text-position">
         <h1>
-            <?= $baner_mob['title'] ? $baner_mob['title'] : '';?>
+            <?= $items['title'] ? $items['title'] : '';?>
         </h1>
         <p>
-            <?= $baner_mob['subtitle'] ? $baner_mob['subtitle'] : '';?>
+            <?=$items['subtitle'] ? $items['subtitle'] : '';?>
         </p>
-        <button><a href="<?= $items['link'] ? $items['link'] : '';?>">Услуги</a></button>
+        <button><a href="<?= $items['link'] ? $items['link'] : '';?>"><?= $items['link_name'] ? $items['link_name'] : '';?></a></button>
     </div>
 </div>
 <div class="section section-services">

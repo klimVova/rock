@@ -58,6 +58,12 @@ acf_add_options_sub_page(array(
         'after_widget'  => null
       ]);
       register_sidebar([
+        'name' => 'Сайдбар для переключения языков мобильный',
+        'id' => 'rickmans-lang-mob',
+        'before_widget' => null,
+        'after_widget'  => null
+      ]);
+      register_sidebar([
         'name' => 'Cайдбар в основном меню для телефона',
         'id' => 'rickmans-tel',
         'before_widget' => null,
@@ -70,8 +76,14 @@ acf_add_options_sub_page(array(
         'after_widget'  => null
       ]);
       register_sidebar([
-        'name' => 'Cайдбар в основном меню для локации',
-        'id' => 'rickmans-location',
+        'name' => 'Cайдбар футер',
+        'id' => 'rickmans-footer',
+        'before_widget' => null,
+        'after_widget'  => null
+      ]);
+      register_sidebar([
+        'name' => 'Cайдбар футер_разработка',
+        'id' => 'rickmans-footer_dev',
         'before_widget' => null,
         'after_widget'  => null
       ]);

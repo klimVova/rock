@@ -1221,4 +1221,31 @@ li {
 @media (max-width: 450px) {
 
 }
-
+.pll-switcher-select{
+    background: none;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+option{
+    background-color: #007754;
+}
+.lang{
+    .pll-switcher-select{
+        color: #007754;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 70px;
+    }
+}
+.lang>select>option{
+    background: none;
+    width: 100px;
+}
