@@ -7,13 +7,7 @@ $items = $contacts['contact'];
 ?>
 
 <div class="section section-breadcrumb">
-    <div class="wrapper wrapper-breadcrumb">
-        <div class="breadcrumb">
-            <div><a href="index.html">Главная &#8201;</a></div>
-            &#8212;
-            <span>&#8201; Контакты</span>
-        </div>
-    </div>
+<?php get_template_part('tmp/breadcrumbs'); ?>
 </div>
 
 

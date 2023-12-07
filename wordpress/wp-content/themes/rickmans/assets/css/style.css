@@ -122,10 +122,11 @@ li {
     height: 52px;
     display: flex;
     justify-content: center;
+    padding-right: 25px;
 }
 
 .menu {
-    width: 82%;
+    width: 79%;
     /* left: 100px; */
 }
 
@@ -1248,4 +1249,27 @@ option{
 .lang>select>option{
     background: none;
     width: 100px;
+}
+.home{
+    color: #5B5B5B;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-right: 6px;
+}
+.current-item{
+    color: #007754;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 6px;
+    text-transform: capitalize;
+}
+.ul_links>li{
+    padding-bottom: 15px;
 }

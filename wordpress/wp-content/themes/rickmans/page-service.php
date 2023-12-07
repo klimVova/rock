@@ -4,13 +4,7 @@ get_header();
 $services = get_field('service_section');
 ?>
 <div class="section section-breadcrumb">
-    <div class="wrapper wrapper-breadcrumb">
-        <div class="breadcrumb">
-            <div><a href="index.html">Главная &#8201;</a></div>
-            &#8212;
-            <span>&#8201; Услуги</span>
-        </div>
-    </div>
+<?php get_template_part('tmp/breadcrumbs'); ?>
 </div>
 <div class="background-image-services">
     <div class="section section-services">
